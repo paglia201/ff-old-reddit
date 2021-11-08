@@ -1,0 +1,25 @@
+{
+
+    "manifest_version": 2,
+    "name": "Ye Olde Reddit",
+    "version": "1.0",
+  
+    "description": "Redirects default new Reddit links to old Reddit.",
+  
+    "icons": {
+      "64": "icons/reddit_64px.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://new.reddit.org/*"],
+        "js": ["old_reddit.js"]
+      },
+      {
+        "matches": ["*://www.reddit.org/*"],
+        "js": ["old_reddit.js"]
+      }
+    ]
+  
+  }
+  
