@@ -7,19 +7,19 @@
     "description": "Redirects default new Reddit links to old Reddit.",
   
     "icons": {
-      "64": "icons/reddit_64px.png"
+      "48": "icons/reddit.svg",
+      "96": "icons/reddit.svg"
     },
   
-    "content_scripts": [
-      {
-        "matches": ["*://new.reddit.org/*"],
-        "js": ["old_reddit.js"]
-      },
-      {
-        "matches": ["*://www.reddit.org/*"],
-        "js": ["old_reddit.js"]
-      }
-    ]
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "*://*.reddit.com/*"
+    ],
+
+    "background": {
+      "scripts": ["background.js"]
+    }
   
   }
   

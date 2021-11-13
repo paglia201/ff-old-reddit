@@ -1,0 +1,23 @@
+{
+  "name": "ff-old-reddit",
+  "version": "1.0.0",
+  "description": "Redirects reddit links to old reddit instead of the default new layout.",
+  "main": "background.js",
+  "dependencies": {
+    "web-ext": "^6.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paglia201/ff-old-reddit.git"
+  },
+  "author": "paglia201",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paglia201/ff-old-reddit/issues"
+  },
+  "homepage": "https://github.com/paglia201/ff-old-reddit#readme"
+}
